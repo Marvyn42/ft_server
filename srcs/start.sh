@@ -9,5 +9,3 @@ service php7.3-fpm start
 service mysql start
 mysql -u root < /srcs/configmysql
 bash
-
-docker run -it -e AUTOINDEX=off -p 80:80 ft_server
