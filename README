@@ -1,0 +1,20 @@
+#Vérifier la place disponible sur la VM
+	df -h
+
+#Vérifier les images
+	docker images
+
+#Vérifier les container
+	docker ps -a
+
+#Création d'une image
+	docker build -t nom_de_ton_image
+
+#Création du container
+	docker run -it -p 80:80 -p 443:443 nom_de_ton_image
+
+#Création du container avec Autoindex off
+	docker run -it -e AUTOINDEX=off -p 80:80 -p 443:443 nom_de_ton_image
+
+#Tout supprimer
+	docker system prune -a
