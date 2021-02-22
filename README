@@ -18,3 +18,9 @@
 
 #Tout supprimer
 	docker system prune -a
+
+
+#DOCKER
+	sudo groupadd docker
+	sudo usermod -aG docker user42
+	/!\ SE RELOG DE LA VM /!\
